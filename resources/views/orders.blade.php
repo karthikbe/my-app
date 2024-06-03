@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 10 Datatables Date Range Filter</title>
+    <title></title>
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
@@ -41,10 +41,28 @@
                     <thead>
                         <tr>
                             <th>Product No</th>
-                            <th>Product Name</th>
-                            <th>Product Count</th>
-                            <th>Email</th>
-                            <th>Created On</th>
+                            <th>Techs</th>
+                            <th>WtyLbr</th>
+                            <th>WtyParts</th>
+                            <th>LbrHrs</th>
+                            <th>Wait</th>
+                            <!-- <th>LbrRate</th>
+                            <th>LbrCost</th>
+                            <th>LbrFee</th>
+                            <th>PartsFee</th>
+                            <th>TotalCost</th> -->
+                            <th>TotalFee</th>
+                            <th>LbrFee</th>
+                            <th>ReqDay</th>
+                            <th>WorkDay</th>
+                            <th>WorkDate</th>
+                            <th>ReqDate</th>
+                            <!-- <th>Rush</th>
+                            <th>Service</th>
+                            <th>LeadTech</th>
+                            <th>District</th>
+                            <th>wo</th> -->
+
                             <th>Action</th>
                           
                         </tr>
@@ -89,11 +107,33 @@ $(function () {
         },
         columns : [
             {data : 'id', name : 'id'},
-            {data : 'p_name', name : 'p_name'},
-            {data : 'order_count', name : 'order_count'},
-            {data : 'email', name : 'email'},
-            {data : 'order_date', name : 'order_date'},
+            {data : 'Techs', name : 'Techs'},
+            {data : 'WtyLbr', name : 'WtyLbr'},
+            {data : 'WtyParts', name : 'WtyParts'},
+            {data : 'LbrHrs', name : 'LbrHrs'},
+            {data : 'PartsCost', name : 'PartsCost'},
+            {data : 'Wait', name : 'Wait'},
+            // {data : 'LbrRate', name : 'LbrRate'},
+            // {data : 'LbrCost', name : 'LbrCost'},
+            // {data : 'LbrFee', name : 'LbrFee'},
+            // {data : 'PartsFee', name : 'PartsFee'},
+            // {data : 'TotalCost', name : 'TotalCost'},
+            {data : 'TotalFee', name : 'TotalFee'},
+            {data : 'ReqDay', name : 'ReqDay'},
+            {data : 'WorkDay', name : 'WorkDay'},
+            {data : 'WorkDate', name : 'WorkDate'},
+            {data : 'ReqDate', name : 'ReqDate'},
+            // {data : 'Rush', name : 'Rush'},
+            // {data : 'Service', name : 'Service'},
+            // {data : 'LeadTech', name : 'LeadTech'},
+            // {data : 'District', name : 'District'},
+            // {data : 'WO', name : 'wo'},
+
+
+
             {data : 'link', name : 'link'},
+
+   
            
         ]
     });

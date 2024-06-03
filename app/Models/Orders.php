@@ -9,7 +9,7 @@ class Orders extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $table = "orders";
+    protected $table = "order_details";
     protected $guarded=[];
 
 }
